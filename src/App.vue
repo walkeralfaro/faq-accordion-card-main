@@ -1,26 +1,79 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div class="faqs">
+    <Faq
+      v-for="(faq, i) in faqs" 
+      :faq="faq"
+      :index="i"
+      :key="i"
+      :open="faq.open"
+      @toggle="toggleOpen"
+    />
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/WalkerAlfaro">Walker Alfaro Trelles</a>.
+    </div>
+  </footer>
+
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Faq from "@/components/Faq.vue";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {Faq},
+  data () {
+    return {
+      faqs: [
+        {
+          question: 'How many team members can I invite?',
+          answer: 'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.',
+          open: false,
+        },
+        {
+          question: 'What is the maximum file upload size?',
+          answer: 'No more than 2GB. All files in your account must fit your allotted storage space.',
+          open: false
+        },
+        {
+          question: 'How do I reset my password?',
+          answer: 'Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.',
+          open: false
+        },
+        {
+          question: 'Can I cancel my subscription?',
+          answer: 'Yes! Send us a message and we’ll process your request no questions asked.',
+          open: false
+        },
+        {
+          question: 'Do you provide additional support?',
+          answer: 'Chat and email support is available 24/7. Phone lines are open during normal business hours.',
+          open: false
+        },
+      ],
+    }
+  },
+
+  methods: {
+    toggleOpen(index) {
+      this.faqs = this.faqs.map((faq, i) => {
+        if (index === i) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    }
   }
 }
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
