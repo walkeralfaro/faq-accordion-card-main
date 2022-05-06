@@ -3,9 +3,13 @@
     :class="open ? 'faq open' : 'faq'"
     @click="$emit('toggle', index)"
   >
-    <h3 class="question">{{ faq.question }}</h3>
+    <div class="question_container">
+      <h3 class="question">{{ faq.question }}</h3>
+      <img src="images/icon-arrow-down.svg" alt="arrow">
+    </div>
     <p class="answer">{{ faq.answer }}</p>
   </div>
+  <hr>
 </template>
 
 <script>

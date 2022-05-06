@@ -1,0 +1,65 @@
+@use '../base/variables' as v;
+
+.illustration {
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-position: 115% 70%;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .cube {
+        position: absolute;
+        left: -9.3rem;
+        top: 22rem;
+        z-index: 1;
+    }
+}
+
+.women-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .women.desktop {
+        position: absolute;
+        top: 9rem;
+        left: -8.5rem;
+    }
+
+    .women.mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .illustration {
+        height: 15rem;
+        background-image: url(/images/bg-pattern-mobile.svg);
+        background-position: center -10%;
+        background-size: 27rem;
+
+        .cube {
+            display: none;
+        }
+    }
+
+    .women-container {
+        overflow: visible;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .women.mobile {
+            display: block;
+            position: absolute;
+            top: -13rem;
+            width: 27rem;
+        }
+
+        .women.desktop {
+            display: none;
+        }
+        
+    }
+
+}

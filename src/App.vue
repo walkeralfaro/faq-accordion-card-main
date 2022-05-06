@@ -1,16 +1,33 @@
 <template>
 
-  <div class="faqs">
-    <Faq
-      v-for="(faq, i) in faqs" 
-      :faq="faq"
-      :index="i"
-      :key="i"
-      :open="faq.open"
-      @toggle="toggleOpen"
-    />
-  </div>
+<main class="container">
+  <div class="flex">
+    <div class="grid">
 
+      <section class="illustration">
+        <img class="cube" src="images/illustration-box-desktop.svg" alt="@_cube">
+        <div class="women-container">
+            <img class="women desktop" src="images/illustration-woman-online-desktop.svg" alt="women_illustration">
+            <img class="women mobile" src="images/illustration-woman-online-mobile.svg" alt="women_illustration">
+        </div>
+      </section>
+
+      <section class="faq_container">
+        <h1>FAQ</h1>
+        <div class="faqs">
+          <Faq
+            v-for="(faq, i) in faqs" 
+            :faq="faq"
+            :index="i"
+            :key="i"
+            :open="faq.open"
+            @toggle="toggleOpen"
+          />
+        </div>
+      </section>
+
+    </div>
+  </div>
   <footer>
     <div class="attribution">
       Challenge by
@@ -20,7 +37,7 @@
       <a href="https://github.com/WalkerAlfaro">Walker Alfaro Trelles</a>.
     </div>
   </footer>
-
+</main>
 
 </template>
 

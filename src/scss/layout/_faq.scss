@@ -1,0 +1,87 @@
+@use '../base/variables' as v;
+
+.faq_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 9rem;
+    margin-left: 2rem;
+
+    h1 {
+        font-size: 3.2rem;
+        margin: 0 0 5rem 0
+    }
+
+    .faqs {
+        height: 30rem;
+    }
+}
+
+.question_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .question {
+        margin: 0;
+        font-weight: 400;
+        color: v.$VDGB;
+    }
+
+    .question:hover {
+        color: v.$SoftRed;
+    }
+
+    img {
+        height: 100%;
+        margin-right: 2rem;
+        transition: transform .4s;
+    }
+}
+
+.answer {
+    margin-top: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s linear;
+    color: v.$DGB;
+}
+
+.faq.open {
+
+    .answer {
+        margin-top: 1rem;
+        max-height: 3rem;
+        color: v.$DGB;
+    }
+
+    .question {
+        font-weight: 700;
+        color: v.$VDGB;
+    }
+
+    img {
+        transform: rotate(180deg);
+    }
+}
+
+.faq.open:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .faq_container {
+        margin: 0 2rem;
+        font-size: 1.1rem;
+
+
+        h1 {
+            margin: 0 auto 4rem auto;
+        }
+    }
+
+
+
+}
