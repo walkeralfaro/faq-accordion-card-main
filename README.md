@@ -27,7 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![landscape](https://github.com/WalkerAlfaro/faq-accordion-card-main/blob/main/screenshots/landscape.png)
+
+![mobile](https://github.com/WalkerAlfaro/faq-accordion-card-main/blob/main/screenshots/mobile.png)
 
 ### Links
 
