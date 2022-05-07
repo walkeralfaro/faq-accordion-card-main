@@ -4,15 +4,15 @@
   <div class="flex">
     <div class="grid">
 
-      <article class="illustration">
+      <div class="illustration">
         <img class="cube" src="images/illustration-box-desktop.svg" alt="@_cube">
         <div class="women-container">
             <img class="women desktop" src="images/illustration-woman-online-desktop.svg" alt="women_illustration">
             <img class="women mobile" src="images/illustration-woman-online-mobile.svg" alt="women_illustration">
         </div>
-      </article>
+      </div>
 
-      <article class="faq_container">
+      <div class="faq_container">
         <h1>FAQ</h1>
         <div class="faqs">
           <Faq
@@ -24,7 +24,7 @@
             @toggle="toggleOpen"
           />
         </div>
-      </article>
+      </div>
 
     </div>
   </div>
