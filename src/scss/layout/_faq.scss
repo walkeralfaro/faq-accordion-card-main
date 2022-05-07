@@ -38,6 +38,10 @@
         margin-right: 2rem;
         transition: transform .4s;
     }
+
+    h2 {
+        font-size: 1.3rem;
+    }
 }
 
 .answer {
@@ -46,12 +50,14 @@
     overflow: hidden;
     transition: max-height .3s linear;
     color: v.$DGB;
+    margin-right: 4rem;
 }
 
 .faq.open {
 
     .answer {
         margin-top: 1rem;
+        margin-right: 4rem;
         max-height: 3rem;
         color: v.$DGB;
     }

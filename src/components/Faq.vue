@@ -4,7 +4,7 @@
     @click="$emit('toggle', index)"
   >
     <div class="question_container">
-      <h3 class="question">{{ faq.question }}</h3>
+      <h2 class="question">{{ faq.question }}</h2>
       <img src="images/icon-arrow-down.svg" alt="arrow">
     </div>
     <p class="answer">{{ faq.answer }}</p>
