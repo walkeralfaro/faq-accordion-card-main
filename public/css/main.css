@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
 }
 
@@ -401,11 +401,11 @@ template {
 @media (max-width: 1000px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
+    grid-template-rows: 15rem 40rem;
     min-width: 32.5rem;
     margin: 10rem 2.5rem;
     margin-top: 20rem;
-    height: 53rem;
+    height: 58rem;
   }
 }
 .faq_container {
@@ -433,6 +433,7 @@ template {
   margin: 0;
   font-weight: 400;
   color: hsl(237deg, 12%, 33%);
+  font-size: 1.4rem;
 }
 .question_container .question:hover {
   color: hsl(14deg, 88%, 65%);
@@ -442,15 +443,12 @@ template {
   margin-right: 2rem;
   transition: transform 0.4s;
 }
-.question_container h2 {
-  font-size: 1.3rem;
-}
 
 .answer {
   margin-top: 1rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s linear;
+  transition: max-height 0.2s linear;
   color: hsl(240deg, 6%, 50%);
   margin-right: 4rem;
 }
@@ -458,7 +456,7 @@ template {
 .faq.open .answer {
   margin-top: 1rem;
   margin-right: 4rem;
-  max-height: 3rem;
+  max-height: 4.5rem;
   color: hsl(240deg, 6%, 50%);
 }
 .faq.open .question {
@@ -520,6 +518,7 @@ template {
     background-image: url(/images/bg-pattern-mobile.svg);
     background-position: center -10%;
     background-size: 27rem;
+    height: 12rem;
   }
   .illustration .cube {
     display: none;
@@ -530,6 +529,7 @@ template {
     position: relative;
     display: flex;
     justify-content: center;
+    height: 12rem;
   }
   .women-container .women.mobile {
     display: block;

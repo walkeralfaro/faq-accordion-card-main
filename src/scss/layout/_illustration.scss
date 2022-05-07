@@ -36,6 +36,7 @@
         background-image: url(/images/bg-pattern-mobile.svg);
         background-position: center -10%;
         background-size: 27rem;
+        height: 12rem;
 
         .cube {
             display: none;
@@ -47,6 +48,7 @@
         position: relative;
         display: flex;
         justify-content: center;
+        height: 12rem;
 
         .women.mobile {
             display: block;

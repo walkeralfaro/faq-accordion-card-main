@@ -27,6 +27,7 @@
         margin: 0;
         font-weight: 400;
         color: v.$VDGB;
+        font-size: 1.4rem;
     }
 
     .question:hover {
@@ -38,17 +39,13 @@
         margin-right: 2rem;
         transition: transform .4s;
     }
-
-    h2 {
-        font-size: 1.3rem;
-    }
 }
 
 .answer {
     margin-top: 1rem;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .3s linear;
+    transition: max-height .2s linear;
     color: v.$DGB;
     margin-right: 4rem;
 }
@@ -58,7 +55,7 @@
     .answer {
         margin-top: 1rem;
         margin-right: 4rem;
-        max-height: 3rem;
+        max-height: 4.5rem;
         color: v.$DGB;
     }
 
